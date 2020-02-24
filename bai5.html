@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = "";
+        let avePoint = parseFloat(prompt("enter student's avarage point"));
+        if (avePoint >= 0 && avePoint <= 10){
+            if (avePoint >= 9){
+                result = "xuat sac";
+            }else if (avePoint >= 8 ){
+                result = "gioi";
+            }else if (avePoint >= 6.5){
+                result = "kha";
+            }else if (avePoint >= 5){
+                result = "trung binh";
+            }else if (avePoint >= 3.5){
+                result = "yeu";
+            }else {
+                result = "kem";
+            }
+            alert("Ban dat hoc luc " + result);
+        }else {
+            alert("diem nhap sai")
+        }
+    </script>
+</body>
+</html>

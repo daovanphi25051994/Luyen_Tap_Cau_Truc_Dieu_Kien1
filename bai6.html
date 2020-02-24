@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tinh luong (Salary calculator)</title>
+</head>
+<body>
+    <script>
+        let sales = parseInt(prompt("enter your sales(million)"));
+        let salary = 5;
+        if (sales >= 0) {
+            if (sales >= 100) {
+                salary += (0.2 * sales);
+            } else if (sales >= 90) {
+                salary += (0.19 * sales);
+            } else if (sales >= 80) {
+                salary += (0.18 * sales);
+            } else if (sales >= 70) {
+                salary += (0.17 * sales);
+            } else if (sales >= 60) {
+                salary += (0.16 * sales);
+            } else if (sales >= 50) {
+                salary += (0.15 * sales);
+            } else if (sales >= 40) {
+                salary += (0.14 * sales);
+            } else if (sales >= 30) {
+                salary += (0.13 * sales);
+            } else if (sales >= 20) {
+                salary += (0.12 * sales);
+            } else if (sales >= 10) {
+                salary += (0.11 * sales);
+            } else {
+                salary += (0.1 * sales);
+            }
+            alert("your salary is " + salary);
+        }else {
+            alert("Nhap sai")
+        }
+
+    </script>
+</body>
+</html>
